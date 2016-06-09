@@ -1,0 +1,8 @@
+#!/bin/bash -xe
+
+docker pull sequenceiq/hadoop-docker:2.7.1
+docker pull spotify/kafka
+
+go get github.com/pborman/uuid
+go get github.com/colinmarc/hdfs
+go get github.com/Shopify/sarama
