@@ -26,7 +26,7 @@ In another terminal, start kafka container:
 
 ## Inspecting HDFS
 
-* cd /usr/local/hadoop
+* `cd /usr/local/hadoop`
 
 List files:
 
