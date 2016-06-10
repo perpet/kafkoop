@@ -27,7 +27,10 @@ func TestLineReader(t *testing.T) {
 }
 
 func TestProducer(t *testing.T) {
-	r, _ := NewLineReader(inputFile)
+	r, err := NewLineReader(inputFile)
+	if err != nil {
+		t.Fatal(err)
+	}
 
 	producer, err := New([]string{"127.0.0.1:9092"}, r)
 	if err != nil {

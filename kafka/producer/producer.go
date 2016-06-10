@@ -32,7 +32,17 @@ func (p *Producer) Produce() error {
 		if err != nil {
 			return nil
 		}
-		// send to producer here
+
+		// TODO: set topic to something from the input
+
+		msg := sarama.ProducerMessage{
+			Topic: "hack",
+			Value: sarama.StringEncoder(string(buf)),
+		}
+		_, _, err := p.producer.SendMessage(&msg)
+		if err != nil {
+			return err
+		}
 	}
 	return nil
 }
