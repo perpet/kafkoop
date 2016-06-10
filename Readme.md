@@ -40,4 +40,10 @@ Remove file(s):
 
 * `bin/hdfs dfs -rm -r /tmp`
 
+## Links
+
+* [Hadoop Docker](https://github.com/sequenceiq/hadoop-docker)
+* [Golang HDFS library](https://github.com/colinmarc/hdfs)
+* [Kafka Docker](https://github.com/spotify/docker-kafka)
+* [Golang Kafka library](https://github.com/Shopify/sarama)
 
